@@ -1,0 +1,55 @@
+$searchBarBackground: #fafafa;
+$searchBarBorder: #aaaaaa;
+
+.search {
+    width: 100%;
+    position: relative;
+    min-width: 0;
+
+    &__field {
+        max-height: unset !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        border-radius: 2.25rem;
+        border: 0.03125rem solid $searchBarBorder;
+        background: $searchBarBackground 0% 0% no-repeat padding-box;
+        height: 5.5rem;
+    }
+
+    &__input {
+        height: 100%;
+        background-color: $searchBarBackground;
+        font-size: 1rem;
+        padding: 0 2.75rem !important;
+        color: black;
+        min-width: 0;
+    }
+
+    &__clear {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 4.5rem;
+        transform: translateY(-50%);
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+.active > div {
+    box-shadow: 0 0 0 0.0625rem rgb(97, 97, 252);
+
+    input {
+        background: white;
+    }
+
+    button {
+        background: rgb(97, 97, 252);
+
+        img {
+            filter: brightness(10);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.rentals {
+    display: flex;
+    flex-direction: column;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+
+        img {
+            border-radius: 1rem;
+            margin-right: 2rem;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        color: rgb(78, 78, 78);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+}
+
